@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">MyApp</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="left-menu" id="leftMenu">
+            <button id="toggleMenu">Toggle Menu</button>
+            <ul class="menu-items">
+                <li><a href="#">User 1</a></li>
+                <li><a href="#">User 2</a></li>
+                <li><a href="#">User 3</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>Welcome to the Chat Application</h1>
+            <p>Start a conversation by selecting a user from the left menu.</p>
+        </div>
+
+        <div class="right-panel">
+            <h2>Recent Chats</h2>
+            <ul class="recent-chats">
+                <li><a href="#">Chat with User 1</a></li>
+                <li><a href="#">Chat with User 2</a></li>
+                <li><a href="#">Chat with User 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 MyApp. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
